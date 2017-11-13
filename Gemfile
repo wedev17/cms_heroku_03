@@ -14,7 +14,7 @@ group :development, :test do
 end
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+#gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -67,3 +67,8 @@ gem 'refinerycms-authentication-devise', '~> 2.0'
 #  gem 'refinerycms-inquiries', ['~> 4.0', '>= 4.0.0']
 #  gem 'refinerycms-search', ['~> 4.0', '>= 4.0.0']
 #  gem 'refinerycms-page-images', ['~> 4.0', '>= 4.0.0']
+group :production do
+gem 'dragonfly-s3_data_store'
+gem 'rails_12factor'
+gem 'puma'
+end
